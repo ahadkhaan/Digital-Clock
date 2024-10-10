@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center {
+    width: 60vw; /* Set a relative width to adapt to screen sizes */
+    height: 30vh; /* Set relative height */
+    background-color: rgba(245, 245, 245, 0.676);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.313); /* Box shadow */
+}
+
+.center h1 {
+    color: white;
+    font-size: 4vw; /* Set font size relative to screen width */
+}
+
+.center span {
+    font-size: 3vw; /* Adjust the font size of the colons */
+    color: rgba(0, 0, 0, 0.604);
+    align-self: center;
+}
+
+.label {
+    font-size: 1.5vw; /* Set a relative size for the labels */
+    color: rgba(0, 0, 0, 0.604);
+    text-align: center;
+    margin-top: 5px;
+    font-weight: 900;
+}
+
+/* Media queries for smaller screens */
+
+@media (max-width: 768px) {
+    .center {
+        width: 70vw; /* Increase width on smaller screens */
+        height: 35vh;
+    }
+    .center h1 {
+        font-size:8vw; /* Increase the size of the digits */
+    }
+    .center span {
+        font-size: 5vw; /* Adjust the colon size */
+    }
+    .label {
+        font-size: 2vw; /* Adjust label size */
+
+    }
+}
+
+@media (max-width: 480px) {
+    .center {
+        width: 65vw;
+        height: 25vh;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.529);
+    }
+    .center h1 {
+        font-size: 12vw;
+    }
+    .center span {
+        font-size: 8vw;
+    }
+    .label {
+        font-size: 4vw;
+
+    }
+}
