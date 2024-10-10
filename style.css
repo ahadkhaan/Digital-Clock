@@ -20,51 +20,50 @@ html, body {
 }
 
 .center {
-    width: 60vw; /* Set a relative width to adapt to screen sizes */
-    height: 30vh; /* Set relative height */
+    width: 60vw; 
+    height: 30vh; 
     background-color: rgba(245, 245, 245, 0.676);
     display: flex;
     align-items: center;
     justify-content: space-around;
     border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.313); /* Box shadow */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.313); 
 }
 
 .center h1 {
     color: white;
-    font-size: 4vw; /* Set font size relative to screen width */
+    font-size: 4vw; 
 }
 
 .center span {
-    font-size: 3vw; /* Adjust the font size of the colons */
+    font-size: 3vw; 
     color: rgba(0, 0, 0, 0.604);
     align-self: center;
 }
 
 .label {
-    font-size: 1.5vw; /* Set a relative size for the labels */
+    font-size: 1.5vw; 
     color: rgba(0, 0, 0, 0.604);
     text-align: center;
     margin-top: 5px;
     font-weight: 900;
 }
 
-/* Media queries for smaller screens */
+
 
 @media (max-width: 768px) {
     .center {
-        width: 70vw; /* Increase width on smaller screens */
+        width: 70vw; 
         height: 35vh;
     }
     .center h1 {
-        font-size:8vw; /* Increase the size of the digits */
+        font-size:8vw; 
     }
     .center span {
-        font-size: 5vw; /* Adjust the colon size */
+        font-size: 5vw; 
     }
     .label {
-        font-size: 2vw; /* Adjust label size */
-
+        font-size: 2vw; 
     }
 }
 
